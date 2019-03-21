@@ -9,7 +9,7 @@
       :requestDetailsObj="requestDetailsObj"
       :objectDetails="objectDetails"
     ></colections>
-    <h1 class="text-align-center" v-else>No art object could be found by your query.</h1>
+    <h1 v-else>No art object could be found by your query.</h1>
     <pages :pag="pagination" :next="requestObj" :changed="changeItemPerPageRequest"></pages>
   </v-container>
 </template>
