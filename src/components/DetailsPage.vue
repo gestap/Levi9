@@ -1,7 +1,13 @@
 
 <template>
   <v-layout row>
-    <v-flex xs12 sm6 offset-sm3 mt-3>
+    <router-link :to="'/'">
+      <v-btn fab small depressed absolute>
+        <v-icon>arrow_back</v-icon>
+      </v-btn>
+    </router-link>
+
+    <v-flex xs12 sm8 offset-sm2 mt-3>
       <v-card>
         <v-img :src="this.colectionDetails.webImage.url" height="500px" contain></v-img>
 
